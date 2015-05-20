@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/Strategy.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/dropdown.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <style>
+        .dark-translucent-bg {
+            background-color: rgb(71, 71, 71);
+            color: #eeeeee;
+        }
+    </style>
+    <script>
+        var str=new String();
+        var arr=new Array();
+        str="ddd~dsd~3~dd~g~k";
+        arr=str.split('~');//注split可以用字符或字符串分割
+        for(var i=0;i<arr.length;i++)
+        {
+            console.log(arr[i]);
+        }
+    </script>
+</head>
+<body>
+<div class="Snav">
+    <div class="container">
+        <nav class=" navbar-default ">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">投资网站</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">软件下载 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的收藏</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button"
+                               aria-expanded="false">策略列表
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="active"><a href="#">股市策略</a></li>
+                                <li><a href="#">期货策略</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索策略</button>
+                    </form>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<div class=" dark-translucent-bg  border-clear">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3  object-non-visible  animated object-visible fadeIn"
+                 data-animation-effect="fadeIn" data-effect-delay="400">
+                <div class="space"></div>
+                <h1 class="title text-center">××策略</h1>
+
+                <p class="text-center lead">用四步选股法，逻辑如下：首先计算长期均线的乖离率；其次把下跌到末期的股票选出；然后把速度衰竭的股票选出；最后监控止跌企稳并选出。</p>
+
+                <div class="space"></div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="_header">
+    <div class="cantainer_center_1000">
+        <ol class="breadcrumb ">
+            <li><a href="#">策略列表</a></li>
+            <li><a href="#">股市策略</a></li>
+            <li class="active">××策略</li>
+        </ol>
+    </div>
+</div>
+
+<div class="cantainer_center_1000">
+
+
+    <div class="cantainer_body">
+        <nav class="container_body_left navbar navbar-default" id="navmove">
+            <ul class="nav navbar-nav">
+                <li><a href="#jj">策略简介 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#bb">详情报表</a></li>
+                <li><a href="#ls">历史选股</a></li>
+            </ul>
+        </nav>
+        <div class="container_body_right">
+            <div class="strategy_detail_box">
+                <div class="strategy_detail_title">
+                    <h3 id="jj">策略简介</h3>
+                </div>
+                <div class="box_width100">
+                    <div class="introduce_left ">
+
+                    </div>
+                    <div class="introduce_right">
+                        <table>
+                            <tr>
+                                <td class="td_a">项目名称：</td>
+                                <td class="td_b">好项目：</td>
+                                <td class="td_a">止盈：</td>
+                                <td class="td_b">10%</td>
+                            </tr>
+                            <tr>
+                                <td class="td_a">发起时间</td>
+                                <td>2015年2月22日</td>
+                                <td class="td_a">止损</td>
+                                <td class="td_b">10%</td>
+                            </tr>
+                            <tr>
+                                <td class="td_a">总收益：</td>
+                                <td class="td_b">100%</td>
+                                <td class="td_a">近一月收益</td>
+                                <td class="td_b">40%</td>
+                            </tr>
+                            <tr>
+                                <td class="td_a">昨日收益：</td>
+                                <td class="td_b">5%</td>
+                                <td class="td_a">近一月收益</td>
+                                <td class="td_b"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_c" colspan="2"></td>
+                                <td class="td_c">
+                                    <button type="button" class="btn btn-default">添加收藏</button>
+                                </td>
+                                <td class="td_c">
+                                    <button type="button" class="btn btn-default">确认购买</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy_detail_box">
+                <div class="strategy_detail_title">
+                    <h3 id="bb">详细报表</h3>
+                </div>
+                <p id="test"></p>
+                <nav class="profitnav">
+                    <button type="button" class="btn btn-default btn-xs " id="profitbtn">单日趋势</button>
+                    <button type="button" class="btn btn-default btn-xs" id="profitsumbtn">单日趋势</button>
+                    <button type="button" class="btn btn-default btn-xs" id="hotbtn">单日趋势</button>
+                </nav>
+
+                <div class="chart">
+                    <div class="strategyprofit">
+                        <canvas id="canvas_profit1" width="720" height="280"></canvas>
+                        <canvas id="canvas_profit2" width="720" height="280"></canvas>
+                        <canvas id="canvas_profit3" width=720" height="280"></canvas>
+                        <canvas id="canvas_profit4" width="720" height="280"></canvas>
+                        <div id="showprofit"></div>
+                    </div>
+                    <div class="marketprofit">
+                        <canvas id="canvas_mprofit1" width="720" height="280"></canvas>
+                        <canvas id="canvas_mprofit2" width="720" height="280"></canvas>
+                        <canvas id="canvas_mprofit3" width=720" height="280"></canvas>
+                        <canvas id="canvas_mprofit4" width="720" height="280"></canvas>
+                        <div id="showmprofit"></div>
+                    </div>
+                    <div class="slidetab">
+                        <canvas id="canvas_slide1" width="720" height="25"></canvas>
+                        <canvas id="canvas_slide2" width="720" height="25"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy_detail_box" id="ls">
+                <div class="strategy_detail_title" id="lsxg">
+                    <h3>历史选股</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

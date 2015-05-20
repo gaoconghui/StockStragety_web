@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bg.jpg);
+
+    font-family: Microsoft YaHei;
+}
+
+.Snav{
+    width: 100%;
+    background-color: rgb(248,248,248);
+}
+
+._header{
+    width: 100%;
+    background-color: rgb(225,225,225);
+}
+.cantainer_center_1000{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cantainer_body{
+    width: 100%;
+}
+.container_body_left{
+    float: left;
+    width: 88px;
+    height: 152px;
+    position: fixed;
+
+}
+.breadcrumb li a{
+    color: #222222 !important;
+}
+.container_body_left ul li{
+    display: block;
+}
+.container_body_right{
+    float: right;
+    width: 850px;
+}
+
+.strategy_detail_box{
+    /*margin-top: 10px;*/
+    width: 100%;
+}
+.strategy_detail_title{
+    width: 100%;
+    border-bottom: solid #080808 1px;
+    height: 40px;
+}
+.strategy_detail_title h3{
+    width: 5em;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+    border-bottom: solid #080808 5px;
+}
+.box_width100{
+    width: 100%;
+    margin-top: 10px;
+    height: 215px;
+}
+.introduce_left{
+    width: 215px;
+    height: 183px;
+    float: left;
+    background-color: #204d74;
+}
+.introduce_right{
+    width: 615px;
+    height: 215px;
+    float: right;
+
+}
+td{
+    border: solid #dddddd 1px;
+}
+.td_a{
+    background-color: #eeeeee;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+}
+.td_b {
+    height: 45px;
+    width: 300px;
+    text-align: center;
+}
+.td_c{
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    border: 0px;
+}
+.profitnav{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+}
+
+.chart{
+    margin-top: 60px;
+    width: 720px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.strategyprofit {
+    width: 720px;
+    height: 280px;
+}
+.marketprofit {
+    margin: 10px;
+    width: 720px;
+    height: 280px;
+}
+
+canvas{
+    position: absolute;
+}
+
+#showprofit ,#showmprofit{
+    display: none;
+    position: absolute;
+    border-style: solid;
+    white-space: nowrap;
+    transition: left 0.4s ease 0s, top 0.4s ease 0s;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-width: 0px;
+    border-color: rgb(51, 51, 51);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    z-index:1 ;
+}
+.slidetab{
+    margin: 10px;
+    width: 720px;
+    height: 25px;
+}
+#canvas_slide1,#canvas_slide2{
+    position: absolute;
+}
+
+.selectstockbox{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+.strategy_select{
+    width: 100%;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.strategy_select .row{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #cccccc;
+    color: #888888;
+}
+
+.border-clear{
+    border: none!important;
+}
+.btn-boborder{
+    border: none !important;
+    color: #888888!important;
+}
+.btn-th{
+    color: black!important;
+}
+.col-1{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 8.33333333%;
+
+}
